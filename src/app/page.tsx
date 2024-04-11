@@ -1,9 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaRegEnvelope } from "react-icons/fa";
+import { FaRegEnvelope,FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { MdOutlineLocalPhone } from "react-icons/md";
+import { FaXTwitter } from "react-icons/fa6";
+import { AiOutlineFacebook } from "react-icons/ai";
+
+
+
+
 
 export default function Home() {
+  const myDate = new Date();
   return (
     <div className="container px-4 mx-auto flex flex-col">
       <header className="flex flex-row justify-between gap-6 h-[80px] py-4">
@@ -25,9 +32,25 @@ export default function Home() {
         </div>
         </section>
       </main>
-      <footer className=" h-[80px] py-4">
+      <footer className="py-4">
         <h3 className="text-base text-[#EF801E] font-medium text-center sm:text-left mb-3">About Us:</h3>
-        <div className="border-t-[1px] border-solid border-[#158EB8]"></div>
+        <div className="border-t-[1px] border-solid border-[#158EB8] flex  flex-col sm:flex-row justify-between gap-5 place place-items-center py-5">
+          <nav className="flex justify-center sm:justify-between gap-4">
+            <Link href="/" title="twitter x">
+              <FaXTwitter className="w-[22px] h-[22px] text-[#0A475C] hover:text-[#EF801E]"/>
+            </Link>
+            <Link href="/" title="facebook">
+              <AiOutlineFacebook className="w-[22px] h-[22px] text-[#0A475C] hover:text-[#EF801E]"/>
+            </Link>
+            <Link href="/" title="instagram">
+              <FaInstagram className="w-[22px] h-[22px] text-[#0A475C] hover:text-[#EF801E]"/>
+            </Link>
+            <Link href="/" title="Linkedin">
+              <FaLinkedinIn className="w-[22px] h-[22px] text-[#0A475C] hover:text-[#EF801E]"/>
+            </Link>
+          </nav>
+          <p className="text-[#0A475C] text-sm font-normal text-center sm:text-right">Copyright &copy; {myDate.getFullYear()} Creative Geeks Limited. All Rights Reserved</p>
+        </div>
       </footer>
     </div>
   );
