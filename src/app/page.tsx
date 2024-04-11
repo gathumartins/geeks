@@ -15,10 +15,10 @@ export default function Home() {
       <main>
         <section className="flex flex-col sm:flex-row justify-between mt-[100px]">
           <div className="text-center sm:text-left flex justify-start flex-col sm:justify-center">
-          <figure><Image src="/imgs/logo.svg" alt="Creative geeks logo" width={89} height={70} className="inline-block"/></figure>
+          <figure><Image src="/imgs/logo.svg" alt="Creative Geeks logo" width={89} height={70} className="inline-block"/></figure>
           <h2 className="text-[#EF801E] font-normal text-4xl mt-[30px]">We’re</h2>
           <h1 className="text-[#0A475C] font-black text-4xl">Launching Soon!</h1>
-          <p className="text-black max-w-[460px] text-sm font-normal mt-[20px]">Our new website is coming soon, with a user-friendly experience. Stay tuned for the big reveal!</p>
+          <p className="text-black max-w-[460px] text-sm font-normal mt-[20px]">Our new website is coming soon, with a user-friendly experience. Stay tuned for the big reveal!</p>
           </div>
         <div className="flex justify-center sm:justify-end">
           <Image src="/imgs/coming.svg" alt="creative geeks coming soon iamge" width={657} height={416} className="inline-block" />
