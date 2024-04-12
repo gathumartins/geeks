@@ -36,16 +36,16 @@ export default function Home() {
         <h3 className="text-base text-[#EF801E] font-medium text-center sm:text-left mb-3">About Us:</h3>
         <div className="border-t-[1px] border-solid border-[#158EB8] flex  flex-col sm:flex-row justify-between gap-5 place place-items-center pt-5">
           <nav className="flex justify-center sm:justify-between gap-4">
-            <Link href="/" title="twitter x">
+            <Link href="https://twitter.com/creageeks" target="_blank" title="twitter x">
               <FaXTwitter className="w-[22px] h-[22px] text-[#0A475C] hover:text-[#EF801E]"/>
             </Link>
-            <Link href="/" title="facebook">
+            <Link href="https://www.facebook.com/creageeks" target="_blank" title="facebook">
               <AiOutlineFacebook className="w-[22px] h-[22px] text-[#0A475C] hover:text-[#EF801E]"/>
             </Link>
-            <Link href="/" title="instagram">
+            <Link href="https://www.instagram.com/creageeks16/" target="_blank" title="instagram">
               <FaInstagram className="w-[22px] h-[22px] text-[#0A475C] hover:text-[#EF801E]"/>
             </Link>
-            <Link href="/" title="Linkedin">
+            <Link href="https://www.linkedin.com/in/creageeks/" target="_blank" title="Linkedin">
               <FaLinkedinIn className="w-[22px] h-[22px] text-[#0A475C] hover:text-[#EF801E]"/>
             </Link>
           </nav>
