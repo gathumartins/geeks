@@ -5,6 +5,7 @@ import { FaRegEnvelope,FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 import { AiOutlineFacebook } from "react-icons/ai";
+import NewsLetter from './NewsLetter';
 
 function ComingSoon() {
      const myDate = new Date();
@@ -17,20 +18,26 @@ function ComingSoon() {
 <span className="text-[#0A475C] group-hover:text-[#EF801E] text-base hidden sm:inline-block font-normal">+254 728 429 252</span></Link>
       </header>
       <main className="my-[50px] sm:my-[80px]">
-        <section className="flex flex-col sm:flex-row justify-between gap-7">
-          <div className="text-center sm:text-left flex justify-start flex-col sm:justify-center">
+        <section className="flex flex-col sm:flex-row justify-between gap-7 place-content-end">
+          <div className="text-center sm:text-left flex justify-start flex-col sm:justify-end">
           <div><Image src="/imgs/logo2.svg" alt="Creative Geeks logo" width={89} height={70} className="inline-block"/></div>
           <h2 className="text-[#EF801E] font-normal text-4xl mt-[30px]">We’re</h2>
           <h1 className="text-[#0A475C] font-black text-4xl">Launching Soon!</h1>
           <p className="text-black max-w-[420px] mx-auto sm:mx-0 text-sm font-normal mt-[20px]">Our new website is coming soon, with a user-friendly experience. Stay tuned for the big reveal!</p>
+          <article className="hidden sm:block mt-5">
+            <NewsLetter/>
+          </article>
           </div>
-        <div className="flex justify-center sm:justify-end">
-          <Image src="/imgs/coming.svg" alt="creative geeks coming soon iamge" width={657} height={416} className="inline-block w-[70%] sm:w-[100%]" loading="lazy" decoding="async" />
+        <div className="flex flex-col sm:flex-row justify-end place-content-end">
+          <Image src="/imgs/coming.svg" alt="creative geeks coming soon iamge" width={657} height={416} className="inline-block mx-auto sm:mr-0 w-[70%] sm:w-[100%]" loading="lazy" decoding="async" />
+          <article className="block sm:hidden mt-5">
+            <NewsLetter/>
+          </article>
         </div>
         </section>
       </main>
       <footer className="py-4">
-        <h3 className="text-base text-[#EF801E] font-medium text-center sm:text-left mb-3">About Us:</h3>
+        <h3 className="text-base text-[#EF801E] font-medium text-center sm:text-left mb-2">About Us:</h3>
         <div className="border-t-[1px] border-solid border-[#158EB8] flex  flex-col sm:flex-row justify-between gap-5 place place-items-center pt-5">
           <nav className="flex justify-center sm:justify-between gap-4">
             <Link href="https://twitter.com/creageeks" target="_blank" title="twitter x">
