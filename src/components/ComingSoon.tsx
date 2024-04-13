@@ -11,9 +11,9 @@ function ComingSoon() {
   return (
     <div className="container px-4 mx-auto flex flex-col min-h-screen place-content-around">
       <header className="flex flex-row justify-between gap-6 h-[50px] py-4">
-        <Link href="mailto:info@creativegeeks.co.ke" className="flex group flex-row gap-2 place-items-center text-[#EF801E] hover:text-[#EF801E]"><FaRegEnvelope  className="h-[18px] w-[18px]"/>
+        <Link href="mailto:info@creativegeeks.co.ke" className="flex group flex-row gap-2 place-items-center text-[#EF801E] hover:text-[#EF801E]" title='mailto link  to info@creativegeeks.co.ke'><FaRegEnvelope  className="h-[18px] w-[18px]"/>
 <span className="text-[#0A475C] group-hover:text-[#EF801E] text-base hidden sm:inline-block font-normal">info@creativegeeks.co.ke</span></Link>
-        <Link href="tel:+254 728 429 252" className="flex group flex-row gap-2 place-items-center text-[#EF801E] hover:text-[#EF801E]"><MdOutlineLocalPhone className="h-[18px] w-[18px]"/>
+        <Link href="tel:+254 728 429 252" className="flex group flex-row gap-2 place-items-center text-[#EF801E] hover:text-[#EF801E]" title='telephone to link to'><MdOutlineLocalPhone className="h-[18px] w-[18px]"/>
 <span className="text-[#0A475C] group-hover:text-[#EF801E] text-base hidden sm:inline-block font-normal">+254 728 429 252</span></Link>
       </header>
       <main className="my-[50px] sm:my-[80px]">
