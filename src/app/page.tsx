@@ -28,7 +28,7 @@ export default function Home() {
           <p className="text-black max-w-[420px] mx-auto sm:mx-0 text-sm font-normal mt-[20px]">Our new website is coming soon, with a user-friendly experience. Stay tuned for the big reveal!</p>
           </div>
         <div className="flex justify-center sm:justify-end">
-          <Image src="/imgs/coming.svg" alt="creative geeks coming soon iamge" width={657} height={416} className="inline-block w-[70%] sm:w-[100%]" />
+          <Image src="/imgs/coming.svg" alt="creative geeks coming soon iamge" width={657} height={416} className="inline-block w-[70%] sm:w-[100%]" loading="lazy" decoding="async" />
         </div>
         </section>
       </main>
